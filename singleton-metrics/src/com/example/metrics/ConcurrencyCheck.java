@@ -1,16 +1,8 @@
 package com.example.metrics;
 
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
+import java.util.*;
+import java.util.concurrent.*;
 
-/**
- * Spawns many threads racing on getInstance().
- * Starter is expected to sometimes create >1 instance. After fix, must always be 1.
- */
 public class ConcurrencyCheck {
 
     public static void main(String[] args) throws Exception {
